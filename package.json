@@ -1,0 +1,17 @@
+{
+  "name": "bon-plan-229",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MVP de la marketplace BON PLAN 229",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "fedapay": "^1.2.0"
+  }
+}
