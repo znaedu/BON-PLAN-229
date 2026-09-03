@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BON PLAN 229</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <strong>BON PLAN <span>229</span></strong>
+    <button onclick="openPublish()">+ Vendre</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p>ACHETER • VENDRE • TROUVER • ÉCONOMISER</p>
+    <h1>Les bonnes affaires, simplement.</h1>
+    <div class="search">
+      <input id="search" placeholder="Que cherchez-vous ?" oninput="loadListings()">
+      <select id="zone" onchange="loadListings()">
+        <option value="">Toute zone</option>
+        <option>Cotonou</option>
+        <option>Abomey-Calavi</option>
+        <option>Porto-Novo
