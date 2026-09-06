@@ -10,7 +10,10 @@
 <header>
   <div class="wrap nav">
     <strong>BON PLAN <span>229</span></strong>
-    <button onclick="openPublish()">+ Vendre</button>
+    <div>
+      <button class="secondary" onclick="openMyListings()">Mes annonces</button>
+      <button onclick="openPublish()">+ Vendre</button>
+    </div>
   </div>
 </header>
 
@@ -22,6 +25,27 @@
       <input id="search" placeholder="Que cherchez-vous ?" oninput="loadListings()">
       <select id="zone" onchange="loadListings()">
         <option value="">Toute zone</option>
-        <option>Cotonou</option>
-        <option>Abomey-Calavi</option>
-        <option>Porto-Novo
+      </select>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div id="categories" class="categories"></div>
+  <div class="head">
+    <h2>Annonces</h2>
+    <button class="secondary" onclick="openSearch()">🔎 Je cherche</button>
+  </div>
+  <div id="listings" class="grid"></div>
+</main>
+
+<div id="modal" class="modal hidden" onclick="if(event.target===this)closeModal()">
+  <div class="dialog">
+    <button class="close" onclick="closeModal()">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
