@@ -55,6 +55,7 @@ input,select,textarea{padding:13px 14px;border:1px solid var(--line);border-radi
 .actions{display:flex;gap:8px;margin-top:14px}
 .actions button{flex:1;border:1px solid var(--line);background:white;border-radius:9px;padding:9px;font-weight:600;cursor:pointer;color:var(--ink)}
 .safe{background:var(--emerald)!important;color:white!important;border:none!important}
+.whatsapp{display:block;text-align:center;margin-top:10px;color:var(--emerald);font-weight:600;font-size:.85rem;text-decoration:none}
 
 .modal{position:fixed;inset:0;background:rgba(34,27,58,.55);display:flex;align-items:center;justify-content:center;padding:15px;z-index:10}
 .hidden{display:none}
@@ -64,6 +65,7 @@ input,select,textarea{padding:13px 14px;border:1px solid var(--line);border-radi
 .form{display:grid;gap:12px;margin-top:14px}
 .field{width:100%}
 .notice{background:#F3E6C9;padding:13px 14px;border-radius:10px;margin:10px 0;font-size:.92rem}
+.notice.small{padding:8px 10px;font-size:.78rem;background:#FBEAE0;color:#8A3A1F}
 
 @media(max-width:650px){
   .search{flex-direction:column}
