@@ -55,6 +55,8 @@ async function init() {
       commission INTEGER NOT NULL,
       seller_amount INTEGER NOT NULL,
       status TEXT DEFAULT 'pending',
+      dispute_reason TEXT,
+      confirm_after TIMESTAMP,
       fedapay_id TEXT,
       created_at TIMESTAMP DEFAULT NOW()
     );
